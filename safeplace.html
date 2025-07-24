@@ -5,29 +5,39 @@
   <title>The Safe Place</title>
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
+  <style>
+    .fade-content {
+      opacity: 0;
+      animation: fadeIn 2s ease-out 0.4s forwards;
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
 </head>
 <body>
-  <!-- Page fade transition -->
   <div class="page-transition"></div>
-
-  <!-- Sunflower background -->
   <div class="sunflower-bg"></div>
 
-  <!-- 💛 Main blurred content container -->
-  <div class="container clear-on-scroll">
+  <div class="container fade-content" style="text-align:center;">
     <h2>The Safe Place</h2>
-    <p class="sans">
-      You held me. I cried. And I found clarity in your arms.
+    <p class="sans" style="font-size:1.3em; line-height:1.8;">
+      You held me.<br>
+      I broke.<br>
+      And still, you stayed.<br><br>
+      That moment — when I cried into you —<br>
+      it wasn't weakness. It was truth. It was surrender.<br>
+      It was love... real, raw, terrifying love.
     </p>
-    <p class="sans">
-      The blur lifted, and I saw you. Really saw you. And in that moment, I knew — I was safe.
-    </p>
-    <div style="text-align:center; margin-top:60px;">
+
+    <div style="margin-top:50px;">
       <button onclick="location.href='final.html'">Next →</button>
     </div>
   </div>
 
-  <!-- 🌻 Floating petals -->
+  <!-- Petals -->
   <img src="petal.png" class="petal" style="left:20%; top:90%;">
   <img src="petal.png" class="petal" style="left:50%; top:95%;">
   <img src="petal.png" class="petal" style="left:75%; top:85%;">
