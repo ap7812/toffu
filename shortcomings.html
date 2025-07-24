@@ -1,29 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><title>Maybe There's Me in You</title>
+  <meta charset="UTF-8">
+  <title>My Shortcomings</title>
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
 <body>
+  <!-- Smooth page fade transition -->
   <div class="page-transition"></div>
+
+  <!-- Background sunflower image -->
   <div class="sunflower-bg"></div>
+
   <div class="container">
-    <h2>Maybe There's a Little Bit of Me in You</h2>
-    <p class="sans">This is your letter.</p>
-    <button id="reveal">Read me only when you’re ready</button>
-    <div id="hidden-note" style="display:none; margin-top:2em;">
-      <p class="sans">
-        You are my gratitude.<br>
-        You are my grace.<br>
-        You are the best thing that's ever happened to me.<br>
-        I faltered—all my fault—but you saw me, you stayed.<br>
-        Now we are healing together.<br>
-        Thank you for staying.<br>
-        <strong>Lobbaaaa.</strong>
-      </p>
-      <img src="sunflower.jpg" alt="sunflower" style="width:150px;margin-top:20px;cursor:pointer;"
-           onclick="alert('💛')">
+    <h2>My Shortcomings</h2>
+
+    <div style="height:600px"></div>
+    <p class="fade-in sans" style="opacity:0; transform:translateY(20px);">
+      I couldn’t say what I felt.
+    </p>
+
+    <div style="height:300px"></div>
+    <p class="fade-in sans" style="opacity:0; transform:translateY(20px);">
+      But I never stopped loving you.
+    </p>
+
+    <div style="height:300px"></div>
+    <p class="fade-in sans" style="opacity:0; transform:translateY(20px);">
+      I was lost—but you were always home.
+    </p>
+
+    <!-- 🌻 Navigation to next page -->
+    <div style="text-align:center; margin-top:60px;">
+      <button onclick="location.href='safeplace.html'">Next →</button>
     </div>
   </div>
 </body>
