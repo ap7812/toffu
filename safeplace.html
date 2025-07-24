@@ -1,21 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><title>The Safe Place</title>
+  <meta charset="UTF-8">
+  <title>The Safe Place</title>
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
 <body>
   <div class="page-transition"></div>
   <div class="sunflower-bg"></div>
-  <div class="container clear-on-scroll" style="filter:blur(50px);">
+
+  <div class="container clear-on-scroll" style="filter:blur(50px); transition: filter 1s ease-out;">
     <h2>The Safe Place</h2>
-    <p class="sans">You held me. I cried. And I found clarity in your arms.</p>
-    <p class="sans">Scroll to see the world clear…</p>
-    <button onclick="location.href='final.html'">Next</button>
+    <p class="sans">
+      You held me when I broke.<br>
+      I cried in your arms, truly cried.<br>
+      It was the first time I felt safe in someone else's silence.<br><br>
+
+      You didn’t fix me.<br>
+      You just stayed.<br>
+      And in that stillness, I softened.<br>
+      And in that softness, I healed.
+    </p>
+    <div style="text-align:center; margin-top:50px;">
+      <button onclick="location.href='final.html'">Next →</button>
+    </div>
   </div>
+
+  <!-- Floating petals -->
   <img src="petal.png" class="petal" style="left:20%; top:90%;">
-  <img src="petal.png" class="petal" style="left:50%; top:95%;">
-  <img src="petal.png" class="petal" style="left:75%; top:85%;">
+  <img src="petal.png" class="petal" style="left:60%; top:95%;">
+  <img src="petal.png" class="petal" style="left:80%; top:85%;">
 </body>
 </html>
