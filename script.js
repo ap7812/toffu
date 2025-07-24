@@ -2,8 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const overlay = document.querySelector('.page-transition');
   if (overlay) setTimeout(() => overlay.classList.add('hidden'), 50);
 
-  const pieces = document.querySelectorAll('.piece');
-  pieces.forEach(piece => {
+  document.querySelectorAll('.piece').forEach(piece => {
     piece.addEventListener('click', () => {
       piece.classList.toggle('flipped');
     });
@@ -35,4 +34,8 @@ document.addEventListener('DOMContentLoaded', () => {
       hidden.style.display = hidden.style.display === 'none' ? 'block' : 'none';
     });
   }
+});
+window.addEventListener('beforeunload', () => {
+  const overlay = document.querySelector('.page-transition');
+  overlay && overlay.classList.remove('hidden');
 });
