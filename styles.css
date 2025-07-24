@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap');
+
+body {
+  margin:0; padding:0;
+  background:#fff; color:#333;
+  font-family:'Playfair Display', serif;
+  overflow-x:hidden;
+}
+
+html { scroll-behavior: smooth; }
+
+a { text-decoration:none; color:inherit; }
+
+.container {
+  max-width:800px; margin:0 auto; padding:60px 20px; position:relative;
+}
+
+h1, h2, p {
+  margin-bottom:1.5em;
+}
+h1 { font-size:2.8em; color:#bfa046; text-align:center; }
+h2 { font-size:2.2em; color:#bfa046; }
+
+.sans { font-family:'Open Sans', sans-serif; }
+
+button {
+  background:#bfa046; color:#fff;
+  border:none; padding:12px 24px;
+  font-size:1.1em; cursor:pointer;
+  border-radius:4px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+button:hover {
+  background:#d3b85e;
+  transform:scale(1.03);
+}
+
+.sunflower-bg {
+  position:fixed;
+  top:0; left:0; width:100%; height:100%;
+  background:url('sunflower.jpg') center/cover no-repeat;
+  opacity:0.1; pointer-events:none; z-index:-1;
+}
+
+.piece {
+  display:inline-block;
+  margin:0 8px;
+  cursor:pointer;
+  transform:scale(1);
+  transition:transform 0.3s ease, color 0.3s ease;
+}
+.piece.flipped {
+  color:#bfa046;
+  transform:scale(1.2) rotate(3deg);
+}
+
+.fade-in {
+  opacity:0; transform:translateY(30px);
+  transition:opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Petal animation */
+.petal {
+  position:absolute; width:40px;
+  animation:float 8s infinite;
+}
+@keyframes float {
+  0% { transform: translateY(0) rotate(0); opacity:1; }
+  100% { transform: translateY(-200px) rotate(360deg); opacity:0; }
+}
+
+.page-transition {
+  position:fixed;
+  top:0; left:0;
+  width:100%; height:100%;
+  background:#fff;
+  opacity:1;
+  z-index:9999;
+  transition:opacity 0.8s ease;
+  pointer-events:none;
+}
+.page-transition.hidden {
+  opacity:0;
+}
